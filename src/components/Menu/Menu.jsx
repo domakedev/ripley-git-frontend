@@ -75,7 +75,7 @@ const Menu = function Menu() {
                     style={({ isActive }) =>
                         setIconStyles(isActive, clientListIconHandler)
                     }
-                    to="/client-list"
+                    to="/list-client"
                 />
 
                 <NavLink
