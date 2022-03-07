@@ -10,3 +10,47 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
+.page-main {
+    @apply pl-[13px]
+    flex
+    flex-col
+    items-center
+    justify-center
+    h-screen;
+}
+
+.page-title {
+    @apply text-purple
+    font-bold;
+}
+
+.small-card {
+    @apply w-11/12
+    max-w-[266px]
+    shadow-lg
+    min-h-[100px]
+    px-[20px]
+    py-[15px];
+}
+
+.input-container {
+    @apply w-full
+    mb-[17px]
+    flex
+    flex-col;
+}
+
+label {
+    @apply text-xs
+    font-normal
+    text-purple;
+}
+
+input {
+    @apply border-[1px]
+    rounded-sm
+    p-2
+    text-purple
+    outline-purple;
+}

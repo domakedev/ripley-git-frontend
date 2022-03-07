@@ -10,7 +10,13 @@ import {
     LogoImage,
 } from './styled'
 
-import { WelcomeIconHandler, addClientIconHandler } from '../../utils/setIcon'
+import {
+    WelcomeIconHandler,
+    addClientIconHandler,
+    clientListIconHandler,
+    clientDetailsIconHandler,
+    marketIconHandler,
+} from '../../utils/setIcon'
 import RipleyLogo from '../../assets/images/ripley-logo.svg'
 
 const Menu = function Menu() {
@@ -57,7 +63,28 @@ const Menu = function Menu() {
                     style={({ isActive }) =>
                         setIconStyles(isActive, addClientIconHandler)
                     }
-                    to="edit-profile"
+                    to="/add-client"
+                />
+
+                <NavLink
+                    style={({ isActive }) =>
+                        setIconStyles(isActive, clientListIconHandler)
+                    }
+                    to="/client-list"
+                />
+
+                <NavLink
+                    style={({ isActive }) =>
+                        setIconStyles(isActive, clientDetailsIconHandler)
+                    }
+                    to="/client-details"
+                />
+
+                <NavLink
+                    style={({ isActive }) =>
+                        setIconStyles(isActive, marketIconHandler)
+                    }
+                    to="/market"
                 />
             </BlueContainer>
         </MenuContainer>

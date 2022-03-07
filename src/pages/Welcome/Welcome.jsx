@@ -4,7 +4,7 @@ import './Welcome.css'
 
 const Welcome = () => (
     <MainLayout>
-        <div className="welcome-main">
+        <div className="page-main">
             <h1 className="welcome-gretting">
                 ¡Hola <strong> Admin!</strong>
             </h1>

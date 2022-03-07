@@ -26,5 +26,29 @@ const addClientIconHandler = (active) => {
     }
     return AddClientIconWhite
 }
+const clientListIconHandler = (active) => {
+    if (active) {
+        return ClientListIconBlack
+    }
+    return ClientListIconWhite
+}
+const clientDetailsIconHandler = (active) => {
+    if (active) {
+        return ClientDetailsIconBlack
+    }
+    return ClientDetailsIconWhite
+}
+const marketIconHandler = (active) => {
+    if (active) {
+        return MarketIconBlack
+    }
+    return MarketIconWhite
+}
 
-export { WelcomeIconHandler, addClientIconHandler }
+export {
+    WelcomeIconHandler,
+    addClientIconHandler,
+    clientListIconHandler,
+    clientDetailsIconHandler,
+    marketIconHandler,
+}

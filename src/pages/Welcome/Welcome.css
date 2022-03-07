@@ -1,11 +1,4 @@
-.welcome-main {
-    @apply pl-8
-    flex
-    flex-col
-    items-center
-    justify-center
-    h-screen;
-}
+
 
 .welcome-gretting {
     @apply text-purple
