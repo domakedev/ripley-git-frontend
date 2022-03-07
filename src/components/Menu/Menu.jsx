@@ -23,9 +23,13 @@ const Menu = function Menu() {
     const navigate = useNavigate()
     const [openMenu, setOpenMenu] = useState(true)
     useEffect(() => {
-        setTimeout(() => {
+        const closeMenuTime = setTimeout(() => {
             setOpenMenu(false)
         }, 1000)
+
+        return () => {
+            clearTimeout(closeMenuTime)
+        }
     }, [])
 
     const setIconStyles = (isActive, fun) => {

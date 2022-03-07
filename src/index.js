@@ -7,6 +7,7 @@ import Welcome from './pages/Welcome/Welcome'
 import AddClient from './pages/AddClient/AddClient'
 import ListClient from './pages/ListClient/ListClient'
 import ClientDetails from './pages/ClientDetails/ClientDetails'
+import Market from './pages/Market/Market'
 
 ReactDOM.render(
     <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.render(
                 <Route path="/list-client" element={<ListClient />} />
                 <Route path="/client-details" element={<ClientDetails />} />
                 <Route path="/client-details/:id" element={<ClientDetails />} />
+                <Route path="/market" element={<Market />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>,

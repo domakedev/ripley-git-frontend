@@ -14,15 +14,21 @@ const AddClientForm = () => {
     const [message, setMessage] = useState('Completa los datos')
 
     const cleanError = () => {
-        setTimeout(() => {
+        const timer = setTimeout(() => {
             setErrorForm('')
         }, 3000)
+        return () => {
+            clearTimeout(timer)
+        }
     }
 
     const cleanMessage = () => {
-        setTimeout(() => {
+        const timer = setTimeout(() => {
             setMessage('Completa los datos')
         }, 3000)
+        return () => {
+            clearTimeout(timer)
+        }
     }
 
     const createClient = async () => {
