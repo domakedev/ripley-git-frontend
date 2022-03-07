@@ -71,22 +71,17 @@ const Menu = function Menu() {
     return (
         <MenuContainer menuOpen={openMenu}>
             <BlueContainer>
-                <LogoContainer>
+                <LogoContainer onClick={openTheMenu}>
                     {/* For accessibility is important don't assign a click event in non-interactive elementos like img */}
                     {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
-                    <LogoImage
-                        src={RipleyLogo}
-                        alt="aictive"
-                        onClick={openTheMenu}
-                        onKeyDown={openTheMenu}
-                    />
+                    <LogoImage src={RipleyLogo} alt="ripley" />
                 </LogoContainer>
 
                 <NavLink
                     style={({ isActive }) =>
                         setIconStyles(isActive, WelcomeIconHandler)
                     }
-                    to="welcome"
+                    to="/"
                 />
                 <NavLink
                     style={({ isActive }) =>

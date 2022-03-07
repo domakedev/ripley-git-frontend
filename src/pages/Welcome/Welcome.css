@@ -1,0 +1,11 @@
+.welcome-main {
+    @apply pl-8
+    flex
+    flex-col
+    items-center
+    h-screen;
+}
+
+.welcome-gretting {
+    @apply text-purple;
+}

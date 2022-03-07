@@ -6,6 +6,9 @@ export const MenuContainer = styled.div`
     height: 100vh;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     transition: all;
+    position: absolute;
+    transform: translateX(${(props) => (props.menuOpen ? '' : '-60px')});
+    transition: transform 1s;
 `
 
 export const LogoContainer = styled.div`
@@ -20,6 +23,7 @@ export const LogoContainer = styled.div`
     margin-top: 41px;
     margin-bottom: 50px;
     margin-left: 10px;
+    cursor: pointer;
 `
 export const BlueContainer = styled.div`
     height: 100vh;
