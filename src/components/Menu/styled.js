@@ -6,7 +6,7 @@ export const MenuContainer = styled.div`
     height: 100vh;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     transition: all;
-    position: absolute;
+    position: fixed;
     transform: translateX(${(props) => (props.menuOpen ? '' : '-65px')});
     transition: transform 1s;
 `
@@ -38,12 +38,6 @@ export const BlueContainer = styled.div`
     align-items: center;
 `
 
-
-
-
-
 export const LogoImage = styled.img`
     cursor: pointer;
 `
-
-

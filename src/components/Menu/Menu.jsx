@@ -1,7 +1,7 @@
 /* eslint-disable arrow-body-style */
 /* eslint-disable react/no-unstable-nested-components */
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
 import {
     BlueContainer,
@@ -21,7 +21,12 @@ import RipleyLogo from '../../assets/images/ripley-logo.svg'
 
 const Menu = function Menu() {
     const navigate = useNavigate()
-    const [openMenu, setOpenMenu] = useState(false)
+    const [openMenu, setOpenMenu] = useState(true)
+    useEffect(() => {
+        setTimeout(() => {
+            setOpenMenu(false)
+        }, 1000)
+    }, [])
 
     const setIconStyles = (isActive, fun) => {
         return {
@@ -70,7 +75,7 @@ const Menu = function Menu() {
                     style={({ isActive }) =>
                         setIconStyles(isActive, clientListIconHandler)
                     }
-                    to="/client-list"
+                    to="/list-client"
                 />
 
                 <NavLink
