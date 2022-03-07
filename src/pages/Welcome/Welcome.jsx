@@ -11,6 +11,9 @@ const Welcome = () => {
                 <h1 className="welcome-gretting">
                     ¡Hola <strong> Admin!</strong>
                 </h1>
+                <p className="welcome-description">
+                    Añade y ve a tus cliente, todo en un mismo lugar.
+                </p>
             </div>
         </MainLayout>
     )

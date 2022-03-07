@@ -7,7 +7,7 @@ export const MenuContainer = styled.div`
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     transition: all;
     position: absolute;
-    transform: translateX(${(props) => (props.menuOpen ? '' : '-60px')});
+    transform: translateX(${(props) => (props.menuOpen ? '' : '-65px')});
     transition: transform 1s;
 `
 
@@ -29,7 +29,7 @@ export const BlueContainer = styled.div`
     height: 100vh;
     /* width: 5vw; */
     width: 78px;
-    background: linear-gradient(180deg, #6f28e0 0%, #1d8cea 55.73%);
+    background: linear-gradient(180deg, #5c0094 0%, #9a39d6 74.48%);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
     border-radius: 0px 16px 16px 0px;
     display: flex;

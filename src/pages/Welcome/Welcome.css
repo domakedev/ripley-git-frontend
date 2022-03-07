@@ -3,9 +3,18 @@
     flex
     flex-col
     items-center
+    justify-center
     h-screen;
 }
 
 .welcome-gretting {
-    @apply text-purple;
+    @apply text-purple
+    font-bold;
+}
+
+.welcome-description {
+    @apply text-purple
+    w-1/2
+    text-center
+    mt-8;
 }
