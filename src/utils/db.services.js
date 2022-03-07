@@ -9,5 +9,14 @@ const getAllClients = async () => {
     }
 }
 
+const getClientsAVGAGE = async () => {
+    try {
+        const respuesta = await clienteAxios.get('/api/clients/avg')
+        return respuesta.data
+    } catch (error) {
+        return error.response.data.message
+    }
+}
+
 // eslint-disable-next-line import/prefer-default-export
-export { getAllClients }
+export { getAllClients, getClientsAVGAGE }

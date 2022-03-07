@@ -7,16 +7,20 @@ import Welcome from './pages/Welcome/Welcome'
 import AddClient from './pages/AddClient/AddClient'
 import ListClient from './pages/ListClient/ListClient'
 import ClientDetails from './pages/ClientDetails/ClientDetails'
+import Market from './pages/Market/Market'
+import P404 from './pages/P404/P404'
 
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
             <Routes>
+                <Route path="*" element={<P404 />} />
                 <Route path="/" element={<Welcome />} />
                 <Route path="/add-client" element={<AddClient />} />
                 <Route path="/list-client" element={<ListClient />} />
                 <Route path="/client-details" element={<ClientDetails />} />
                 <Route path="/client-details/:id" element={<ClientDetails />} />
+                <Route path="/market" element={<Market />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>,
