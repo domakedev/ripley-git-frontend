@@ -38,7 +38,7 @@ const Menu = function Menu() {
             minHeight: '46px',
             backgroundColor: isActive ? '#fff' : null,
             boxShadow: isActive ? '4px 4px 8px rgba(0, 0, 0, 0.2)' : '',
-            borderRadius: '100%',
+            borderRadius: '8px',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
