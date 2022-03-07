@@ -1,0 +1,6 @@
+.button_full {
+    @apply w-full
+    bg-purple
+    text-white
+    py-[7px];
+}

@@ -32,7 +32,7 @@ It's an app where you can manage you clients. Create and show them, for now.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/27c85900-4d99-49df-a470-eeabc2efc93a/deploy-status)](https://app.netlify.com/sites/ripley-git-frontend/deploys)
 
-You can see the web here: [Ripley-MDP Test App]().
+You can see the web here: [Ripley-MDP Test App](https://ripley-git-frontend.netlify.app/).
 
 # Start this project
 

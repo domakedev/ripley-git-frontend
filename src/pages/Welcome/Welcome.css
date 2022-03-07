@@ -1,0 +1,13 @@
+
+
+.welcome-gretting {
+    @apply text-purple
+    font-bold;
+}
+
+.welcome-description {
+    @apply text-purple
+    w-1/2
+    text-center
+    mt-8;
+}
